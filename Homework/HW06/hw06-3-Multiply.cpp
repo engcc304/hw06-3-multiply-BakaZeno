@@ -77,16 +77,22 @@
 */
 
 #include <stdio.h>
-int main(){
-    int start,end,i,o=1,sum;
+
+int main() {
+    int start, end, i, o, sum;
+
     printf("Start:\n");
-    scanf("%d",&start);
+    scanf("%d", &start);
     printf("End:\n");
-    scanf("%d",&end);
-    for(i=start; i<=end; i++){
-        for(o=1; o<=9; o++){
-            sum = start*o;
-            printf("%d x %d = %d\n",start,o,sum);
+    scanf("%d", &end);
+
+    for (i = start; i <= end; i++) {
+        for (o = 1; o <= 9; o++) {
+            sum = i * o;
+            printf("%d x %d = %d\n", i, o, sum);
         }
+        printf("\n");
     }
+
+    return 0;
 }
